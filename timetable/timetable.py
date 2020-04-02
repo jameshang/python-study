@@ -4,7 +4,7 @@ from tkinter import *
 def timetable():
     root = Tk()
     root.title('Timetable')
-    root.geometry('400x300+200+200')
+    root.geometry('400x300+400+200')
     root.maxsize(640, 480)
     root.minsize(400, 300)
     ld1 = ['AM1', 'AM2', 'AM3']
