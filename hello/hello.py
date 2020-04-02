@@ -5,7 +5,12 @@ def hello1(name):
     print('Hello %s!' % name)
 
 
-def hello2(name):
+def hello2():
+    name = input('Who are you?\n')
+    print('Hello %s!' % name)
+
+
+def hello3(name):
     root = Tk()
     lb = Label(root, text='Hello %s!' % name)
     lb.pack()
@@ -29,4 +34,4 @@ def divide(a, b):
 
 
 if __name__ == '__main__':
-    hello2('Hanson')
+    hello1('Hanson')
