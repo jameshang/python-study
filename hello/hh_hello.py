@@ -26,13 +26,16 @@ def div(a, b):
     return c
 
 
-if __name__ == '__main__':
-    c1 = add(1, 1, 1, 1, 1, 1, 1, 1, 1, 1)
-    c2 = sub(89, 77)
-    print(c1 * c2)
-    c3 = div(1, 2)
-    print(c3)
+def hello(name):
+    if name == "hanson":
+        print("hello " + name)
+    else:
+        print("hi " + name)
 
-    print(sub1(6, 66))
-    print(sub1(66, 6))
-    print(sub1(6, 6))
+
+def add1(a, b, c):
+    return a + b + c
+
+
+if __name__ == '__main__':
+    hello("james")
