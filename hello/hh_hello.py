@@ -34,8 +34,43 @@ def hello(name):
 
 
 def add1(a, b, c):
-    return a + b + c
+    k = add2(a, b)
+    p = add2(k, c)
+    return p
+
+
+def add2(a, b):
+    c = a + b
+    return c
+
+
+def fun1(a, b, c, d):
+    x = a + b
+    if x > c:
+        y = x * d
+    elif x < c:
+        y = x / d
+    else:
+        y = d
+    return y
+
+
+def add3(a):
+    c = 0
+    for i in range(2, 11):
+        c = c + a
+        if i < 9:
+            print(a + a + a + a + a + a + a)
+        print(i)
+    return c
+
+
+def loop1(a):
+    for i in range(12, 23):
+        if 2 + 11 < i < 6 + 22:
+            print(i)
 
 
 if __name__ == '__main__':
-    hello("james")
+    loop1(1)
+
